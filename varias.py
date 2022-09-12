@@ -33,6 +33,8 @@ while True:
     # Quando a janela for fechada
     if window == janela1 and event == sg.WIN_CLOSED:
         break
+    if window == janela2 and event == sg.WIN_CLOSED:
+        break
     # Quando queremos ir para próxima janela
     if window == janela1 and event == 'Enter':
         janela2 = janela_cadastro()
@@ -41,5 +43,5 @@ while True:
     if window == janela2 and event == 'Voltar':
         janela2.hide()
         janela1.un_hide()
-        
+
 # Lógica de o que deve acontecer ao clicar os botões
